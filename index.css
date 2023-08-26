@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --text: #050703;
+    --background: #f5f8f2;
+    --primary: #315b2f;
+    --secondary: #d7eadf;
+    --accent: #53a276;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+::selection{
+    background-color: var(--secondary);
+}
+.topnav{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlogo{
+    width: 40%;
+    margin-left: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.linktopnav{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.linktopnav h1{
+    font-family: 'DM Sans', sans-serif;
+}
+.list{
+    list-style: none;
+}
+.menu{
+    text-decoration: none;
+    color: var(--background);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--background);
+}
+.maincover0{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.maincover1{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 49px;
+    font-weight: 500;
+}
+.maincover2{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+}
+.img{
+    
+    border-radius: 50%;
+}
+.buttonconfig{
+    margin-top: 15px;
+}
+.button1{
+    font-size: small;
+    font-family: montserrat;
+}
+.button1{
+    color: white;
+}
+.button1{
+    border: none;
+    padding: 10px 32px;
+    text-align: center;
+    background-color: var(--primary);
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background-color 0.3s;
+}
+.button1:hover{
+    background-color: #6b9b69;
+}
+span {
+    content: "\2197";
+    font-weight: bolder;
+    font-size: larger;
+}
+@media(max-width: 897px) {
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--background);
+    }
+    .mainconfig{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 513px) {
+    .topnav{
+        background-color: var(--primary);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    .menu{
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+.content{
+    width: 100%;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .boxlist{
+    margin: 17px 0;
+    width: 95%;
+    background-color: var(--secondary);
+    border-radius: 20px;
+}
+.content .boxlist div img{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    float: right;
+    border-radius: 0 20px 20px 0;
+    animation-name: gif;
+    animation-duration: 28s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes gif {
+    from {object-position: 100% 50%;}
+    to {object-position: 0% 100%;}
+}
+.content .boxlist div .list{
+    padding-bottom: 12px;
+}
+.content .boxlist div .list .list-title{
+    font-weight: 600;
+    padding-top: 12px;
+}
+.content .boxlist div .list div li{
+    margin: 0 0 0 50px;
+    list-style-type: circle;
+}
+.content .boxlist div .list .list-title, li{
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 10px;
+}
+@media (max-width: 861px){
+    .content .boxlist div img{
+        height: 245px;
+        width: 100%;
+        object-fit: cover;
+        float: none;
+        border-radius: 20px 20px 0 0;
+    }
+    .content .boxlist div .list{
+        text-align: center;
+    }
+    .content .boxlist div .list div li{
+        list-style-type: none;
+        margin: 0 0;
+    }
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+}
+.content2 .cardconf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content2 .cardconf h1{
+    font-family: 'DM Sans', sans-serif;
+}
+.content2 .cardconf .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 17px 0 50px 0;
+}
+.title-a{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+.content2 .cardconf .card .card-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 17px;
+}
+.content2 .cardconf .card .card-flex .cardconfig1{
+    margin: 15px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.content2 .cardconf .card .card-flex .cardconfig1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.content2 .cardconf .card .card-flex .cardconfig1 .imgcard{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+@media (max-width: 622px) {
+    .content2 .cardconf .card .card-flex .cardconfig1 .imgcard{
+        width: 160px;
+        height: 230px;
+    }
+}
+.content2 .card-flex .cardconfig1 .cardcontainer{
+    text-align: center;
+}
+.content2 .card-flex .cardconfig1 .cardcontainer h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+.content2 .card-flex .cardconfig1 .cardcontainer .button-project-conf{
+    padding-bottom: 20px;
+    padding-top: 8px;
+}
+.content2 .card-flex .cardconfig1 .cardcontainer .button-project-conf .button-project{
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    padding: 10px 32px;
+    color: var(--text);
+    cursor: pointer;
+}
+.content2 .card-flex .cardconfig1 .cardcontainer .button-project-conf .button-project:hover{
+    color: var(--background);
+    background-color: var(--primary);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text);
+}
+.footer .foot-title{
+    color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    padding: 17px;
+}
+.footer div {
+    display: flex;
+    flex-direction: row;
+}
+.footer div i{
+    font-size: 30px;
+    margin: 0 5px 0 5px;
+    color: white;
+    transition: 0.3s;
+}
+.footer div i:hover{
+    color: var(--accent);
+}
